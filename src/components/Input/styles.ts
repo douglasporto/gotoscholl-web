@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+
 import { Color } from '../../styles/variables';
 import Tooltip from '../Tooltip';
 

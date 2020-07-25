@@ -1,19 +1,19 @@
 import React, { useCallback, useRef } from 'react';
 import { FiMail, FiLock } from 'react-icons/fi';
 import { MdSend } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
+import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
-import { FormHandles } from '@unform/core';
-import * as S from './styles';
-
-import { useAuth } from '../../hooks/auth';
-import { useToast } from '../../hooks/toast';
-import getValidationErros from '../../utils/getValidationErros';
 
 import logoImg from '../../assets/logo-gotoscholl.svg';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
-import { Link } from 'react-router-dom';
+import { useAuth } from '../../hooks/auth';
+import { useToast } from '../../hooks/toast';
+import getValidationErros from '../../utils/getValidationErros';
+import * as S from './styles';
 
 interface SignInFormData {
   email: string;
@@ -74,7 +74,10 @@ const SignIn: React.FC = () => {
                 type="password"
                 placeholder="Senha"
               />
-              <Button type="submit"><MdSend size={16} />Entrar</Button>
+              <Button type="submit">
+                <MdSend size={16} />
+                Entrar
+              </Button>
               <Link to="/forgot-password">Esqueci a senha</Link>
             </Form>
           </S.Card>

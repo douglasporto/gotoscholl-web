@@ -1,6 +1,8 @@
-import styled, { css } from 'styled-components';
-import { lighten } from 'polished';
 import { animated } from 'react-spring';
+
+import { lighten } from 'polished';
+import styled, { css } from 'styled-components';
+
 import { Color } from '../../../styles/variables';
 
 interface ContainerProps {

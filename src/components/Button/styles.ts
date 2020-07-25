@@ -1,5 +1,6 @@
-import styled from 'styled-components';
 import { shade } from 'polished';
+import styled from 'styled-components';
+
 import * as V from '../../styles/variables';
 
 const { themeColor } = V.Color;

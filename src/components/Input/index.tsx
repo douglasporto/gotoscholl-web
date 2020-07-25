@@ -7,10 +7,11 @@ import React, {
 } from 'react';
 import { IconBaseProps } from 'react-icons';
 import { FiAlertCircle } from 'react-icons/fi';
+
 import { useField } from '@unform/core';
 
-import * as S from './styles';
 import { Color } from '../../styles/variables';
+import * as S from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;

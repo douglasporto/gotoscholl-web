@@ -1,8 +1,13 @@
 import styled, { keyframes } from 'styled-components';
-import { Heading2 } from '../../styles/typography'
+
+import { Heading2 } from '../../styles/typography';
 
 export const Container = styled.div`
-  background: linear-gradient(307.01deg, #17177F 15.54%, rgba(3, 253, 253, 0) 115.71%);
+  background: linear-gradient(
+    307.01deg,
+    #17177f 15.54%,
+    rgba(3, 253, 253, 0) 115.71%
+  );
   height: 100vh;
   display: flex;
   align-items: stretch;

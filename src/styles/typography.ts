@@ -5,7 +5,7 @@ export const Title = `
   @media (min-width: 768px) {
     font-size: 4.2rem;
   }
-`
+`;
 
 export const Subtitle1 = `
   color: var(--secondaryColor);
@@ -15,14 +15,14 @@ export const Subtitle1 = `
   @media (min-width: 768px) {
     font-size: 2.4rem;
   }
-`
+`;
 
 export const Subtitle2 = `
   color: var(--secondaryColor);
   font-size: 2rem;
   letter-spacing: -0.04px;
   line-height: 1.3em;
-`
+`;
 
 export const Heading1 = `
   color: var(--primaryColor);
@@ -33,7 +33,7 @@ export const Heading1 = `
   @media (min-width: 768px) {
     font-size: 3rem;
   }
-`
+`;
 
 export const Heading2 = `
   font-size: 1.6rem;
@@ -41,7 +41,7 @@ export const Heading2 = `
   @media (min-width: 768px) {
     font-size: 2.0rem;
   }
-`
+`;
 
 export const Heading3 = `
   color: var(--primaryColor);
@@ -52,7 +52,7 @@ export const Heading3 = `
   @media (min-width: 768px) {
     font-size: 2.4rem;
   }
-`
+`;
 
 export const Heading4 = `
   color: var(--primaryColor);
@@ -60,4 +60,4 @@ export const Heading4 = `
   font-weight: 600;
   letter-spacing: -0.04px;
   line-height: 1.5em;
-`
+`;
