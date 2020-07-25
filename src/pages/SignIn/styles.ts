@@ -1,11 +1,12 @@
 import styled, { keyframes } from 'styled-components';
-import BackgroundImg from '../../assets/login-project-manager.png';
+import { Heading2 } from '../../styles/typography'
 
 export const Container = styled.div`
+  background: linear-gradient(307.01deg, #17177F 15.54%, rgba(3, 253, 253, 0) 115.71%);
   height: 100vh;
   display: flex;
   align-items: stretch;
-  color: var(--text)
+  color: var(--text);
 `;
 
 export const Content = styled.div`
@@ -14,9 +15,33 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 700px;
   img {
     width: 200px;
+    margin-bottom: -25px;
+    z-index: 99;
+  }
+`;
+
+export const Card = styled.div`
+  display: flex;
+  align-items: center;
+  width: 340px;
+  padding: 32px;
+  background: var(--bg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  form {
+    text-align: center;
+    width: 100%;
+    h1 {
+      margin-top: 16px;
+      margin-bottom: 32px;
+      font-weight: bold;
+      ${Heading2}
+    }
+  }
+  a {
+    color: var(--text);
   }
 `;
 
@@ -37,18 +62,4 @@ export const AnimationContainer = styled.div`
   align-items: center;
   justify-content: center;
   animation: ${apperFromLeft} 1s;
-  form {
-    margin: 80px;
-    width: 340px;
-    text-align: center;
-    h1 {
-      margin-bottom: 24px;
-    }
-  }
-`;
-
-export const Background = styled.div`
-  flex: 1;
-  background: url(${BackgroundImg}) no-repeat center;
-  background-size: cover;
 `;
