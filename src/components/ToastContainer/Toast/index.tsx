@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import React, { useEffect } from 'react';
-
 import {
   FiAlertCircle,
   FiXCircle,
   FiInfo,
   FiCheckCircle,
 } from 'react-icons/fi';
+
 import { useToast, ToastMessage } from '../../../hooks/toast';
 import * as S from './styles';
 

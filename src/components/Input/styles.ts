@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+
 import { Color } from '../../styles/variables';
 import Tooltip from '../Tooltip';
 
@@ -20,7 +21,7 @@ export const Container = styled.div<ContainerProps>`
   color: #666360;
 
   & + div {
-    margin-top: 8px;
+    margin-top: 16px;
   }
 
   ${(props) =>
@@ -44,22 +45,20 @@ export const Container = styled.div<ContainerProps>`
 
   input {
     color: var(--bgInputTxt);
-    flex: 1;
     border: 0;
     background: transparent;
-
     &::placeholder {
       color: #666360;
     }
   }
   svg {
-    margin-right: 16px;
+    margin-right: 8px;
   }
 `;
 
 export const Error = styled(Tooltip)`
   height: 20px;
-  margin-left: 16px;
+  margin-left: 8px;
   svg {
     margin: 0;
   }

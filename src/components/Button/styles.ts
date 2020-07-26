@@ -1,5 +1,6 @@
-import styled from 'styled-components';
 import { shade } from 'polished';
+import styled from 'styled-components';
+
 import * as V from '../../styles/variables';
 
 const { themeColor } = V.Color;
@@ -14,8 +15,12 @@ export const Container = styled.button`
   width: 100%;
   font-weight: 500;
   margin-top: 16px;
+  margin-bottom: 16px;
   transition: color ${V.Transition.default};
   &:hover {
     background: ${shade(0.2, themeColor)};
+  }
+  > svg {
+    margin-right: 0.5rem;
   }
 `;
